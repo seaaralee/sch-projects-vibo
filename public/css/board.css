@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+nav{
+    background-color: #678983;
+}
+#title-nav{
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: white;
+}
+#text-login{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 16px;
+}
+#text-register{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 16px;
+}
+
+/* untuk landing page (dibawah navbar)*/
+.landing{
+    display: flex;
+    flex-direction: row;
+    margin: 54px;
+}
+.img-landing{
+    margin-top: 2%;
+}
+#title-landing{
+    margin-top: 15%;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: bold;
+}
+#title-desc{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 80%;
+}
+#title-desc-1{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: normal;
+    max-width: 80%;
+    font-style: italic;
+}
+/* infromation */
+.bg-information{
+    background-color: #678983;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Poppins';
+}
+
+/* menampilkan data */
+.container-read{
+    display: flex;
+    margin: 32px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    
+}
+.read-one{
+    margin-top: 5%;
+    flex: 1 0 10%;
+}
+
+/* style daftar buku */
+#title-book{
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+#image-book{
+    border-radius: 10px;
+}
+
+#author-book{
+    color: #678983;
+}
