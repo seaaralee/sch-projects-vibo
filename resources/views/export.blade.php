@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{{-- HEAD --}}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,20 +14,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vibo</title>
 </head>
+{{-- HEAD --}}
 
+{{-- BODY --}}
 <body>
     <section class="ftco-section">
         <div class="container">
+
+            {{-- BREADCRUMB --}}
             <nav aria-label="">
                 <ol class="breadcrumb" id="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Export Data</li>
+                    <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Export Data</li>
                 </ol>
-              </nav>
+            </nav>
+            {{-- BREADCRUMB --}}
+
+            {{-- CONTENT --}}
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-wrap">
+
+                        {{-- TABLE --}}
                         <table class="table">
+
                             {{-- TABLE HEAD --}}
                             <thead class="thead-primary">
                                 <tr>
@@ -37,35 +49,47 @@
                                     <th>Penerbit</th>
                                 </tr>
                             </thead>
+                            {{-- TABLE HEAD --}}
+
                             {{-- TABLE BODY --}}
                             <tbody>
                                 @foreach ($books as $index => $book)
                                 <tr class="alert" role="alert">
+
+                                    {{-- INDEX --}}
                                     <td>
                                         <div class="judul">
                                             <span>{{$index + 1}}</span>
                                         </div>
                                     </td>
+
+                                    {{-- COVER --}}
                                     <td>
-                                        <img class="img"
-                                            src="{{asset('coverbook/'. $book-> cover)}}"
-                                            alt="">
+                                        <img class="img" src="{{asset('coverbook/'. $book-> cover)}}" alt="">
                                     </td>
+
+                                    {{-- JUDUL --}}
                                     <td>
                                         <div class="judul">
                                             <span>{{$book-> judul}}</span>
                                         </div>
                                     </td>
+
+                                    {{-- PENULIS --}}
                                     <td>
                                         <div class="subjudul">
                                             <span>{{$book-> penulis}}</span>
                                         </div>
                                     </td>
+
+                                    {{-- PENGARANG --}}
                                     <td>
                                         <div class="subjudul">
                                             <span>{{$book-> pengarang}}</span>
                                         </div>
                                     </td>
+
+                                    {{-- PENERBIT --}}
                                     <td>
                                         <div class="subjudul">
                                             <span>{{$book-> penerbit}}</span>
@@ -74,13 +98,19 @@
                                 </tr>
                                 @endforeach
                             </tbody>
+                            {{-- TABLE BODY --}}
+
                         </table>
+                        {{-- TABLE --}}
                     </div>
                 </div>
             </div>
+            {{-- CONTENT --}}
+
         </div>
     </section>
 </body>
+{{-- BODY --}}
 
 </html>
 <script type="text/javascript">

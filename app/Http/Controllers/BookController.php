@@ -59,7 +59,8 @@ class BookController extends Controller
      */
     public function show($id)
     {
-        
+        $book = Book::find($id);
+        return view('export-id', ['book' => $book]);
     }
 
     /**

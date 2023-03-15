@@ -27,12 +27,13 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('/book', BookController::class);
 
     //Menampilakan halaman home (daftar buku) setelah login
+    // Bawaan setelah auth
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     //Menampilkan fungsi search (ada pada home controller)
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'search'])->name('search');
 
     //Menampilkan halaman export
-    Route::get('/export', [App\Http\Controllers\ExportController::class, 'index'])->name('export');
+    Route::get('/export', [ExportController::class, 'index'])->name('export');
 
 });

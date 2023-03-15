@@ -83,3 +83,23 @@ nav{
 #author-book{
     color: #678983;
 }
+
+#btn-action {
+            font-size: 14px;
+            color: #678983;
+            border: transparent;
+            display: block;
+            font-weight: bold;
+            font-family: 'Poppins';
+            justify-content: center;
+            border-radius: 5px;
+}
+
+#breadcrumb {
+    color: #678983;
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
